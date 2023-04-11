@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo "current vesion = ${CURRENT_VERSION}"
                 echo "next version = ${NEXT_VERSION}"
+                echo "next version success"
             }
         }
     }
