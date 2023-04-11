@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         CURRENT_VERSION = currentVersion()
-        NEXT_VERSION = nextVersion()
+        NEXT_VERSION = nextVersion(buildMetadata: "$env.BUILD_NUMBER")
     }
 
     stages {
